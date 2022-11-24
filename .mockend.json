@@ -1,0 +1,17 @@
+{
+  "Customer": {
+    "name": { "string": {} },
+    "projects": {
+      "hasMany": "Project"
+    }
+  },
+  "Project": {
+    "name": { "string": {} },
+    "sentiment": { "string": {} },
+    "jira": { "string": {} },
+    "sow": { "string": {} },
+    "workbook": { "string": {} },
+    "customer": {
+      "belongsTo": "Customer"
+    }
+  }
